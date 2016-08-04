@@ -1,0 +1,54 @@
+#Default HTML header for QDoc builds.
+
+#specify the CSS file used by this template
+HTML.stylesheets = materialize.css
+HTML.stylesheets += style.css \
+##  main.css
+
+#for including files into the qch file
+qhp.extraFiles += materialize.css \
+                              style.css
+
+##  main.css
+
+## FIXME make so that this is more material like
+HTML.headerstyles = \
+    "<meta charset="utf-8">\n"\
+    "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n"\
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"\
+    "<link rel=\"shortcut icon\" href=\"http://papyros.io/images/papyros-icon.png\" />\n"\
+    "  <link rel=\"stylesheet\" type=\"text/css\" href=\"style/style.css\" />\n"\
+    "  <link rel=\"stylesheet\" type=\"text/css\" href=\"style/materialize.css\" />\n" \
+##    "  <link rel=\"stylesheet\" type=\"text/css\" href=\"style/main.css\" />\n" \
+
+
+HTML.endheader = \
+    "</head>\n"
+
+HTML.postheader = \
+    "<body>\n" \
+    "    <div class=\"navbar-fixed\">\n" \
+    "  <nav class=\"light-blue lighten-1\" role=\"navigation\">\n" \
+    "    <div class=\"nav-wrapper container\">\n"\
+    "      <a id=\"logo-container\" href=\"#\" class=\"brand-logo\"\n " \
+    "         style=\"font-family: Roboto; font-weight: 300;\">\n" \
+    "        Material for QtQuick\n" \
+    "      </a>\n" \
+    "    </div>\n" \
+    "  </nav>\n" \
+    "</div>\n" \
+    "<div class=\"header\" id=\"qtdocheader\">\n"\
+    "    <div class=\"main\">\n" \
+    "    <div class=\"main-rounded\">\n" \
+    "        <div class=\"navigationbar\">\n"\
+    "        <ul>\n"\
+
+
+
+HTML.postpostheader = \
+    "    </ul>\n"\
+    "    </div>\n" \
+    "</div>\n" \
+    "<div class=\"container\">\n" \
+    "<div class=\"line\">\n" \
+    "<div class=\"content mainContent\">\n" \

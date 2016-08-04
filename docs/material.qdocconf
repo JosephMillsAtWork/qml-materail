@@ -1,0 +1,56 @@
+project = Material
+description =  Material for QtQuick Documentation
+version = 0.3
+url = http://papyros.io/qml-material/
+
+syntaxhighlighting = true
+sourceencoding = UTF-8
+outputencoding = UTF-8
+
+# The following parameters are for creating a qhp file, the qhelpgenerator
+# program can convert the qhp file into a qch file which can be opened in
+# Qt Assistant and/or Qt Creator.
+
+## Used to make offline documentation
+include($$PWD/html-footer.qdocconf)
+include($$PWD/html-header-offline.qdocconf)
+
+
+# Defines the name of the project. You cannot use operators (+, =, -) in
+# the name. Properties for this project are set using a qhp.<projectname>.property
+# format.
+qhp.projects = Material
+qhp.Material.file = qmlmaterial.qhp
+qhp.Material.namespace = org.material.0.3
+qhp.Material.indexTitle = Material
+qhp.Material.virtualFolder  = material
+
+# For listing child nodes in Qt Creator or Assistant.
+qhp.Material.subprojects = classes qmltypes
+qhp.Material.subprojects.classes.title = C++ Classes
+qhp.Material.subprojects.classes.indexTitle = Material C++ Classes
+qhp.Material.subprojects.classes.selectors = class fake:headerfile
+qhp.Material.subprojects.classes.sortPages = true
+qhp.Material.subprojects.qmltypes.title = QML Types
+qhp.Material.subprojects.qmltypes.indexTitle = Qt Material QML Types
+qhp.Material.subprojects.qmltypes.selectors = fake:qmlclass
+qhp.Material.subprojects.qmltypes.sortPages = true
+
+
+imagedirs += images
+
+sourcedirs += ../src/ \
+                        ../src/components  \
+                        ../src/core \
+                        ../src/listitems \
+                        ../src/popups \
+                        ../src/window \
+                        ../src/controls  \
+                        ../src/extras \
+                        ../src/styles
+
+excludedirs += ../../
+
+sources.fileextensions  = "*.qdoc *.cpp *.qml *.js"
+outputdir = $OUTDIR
+depends += qtquick qtqml

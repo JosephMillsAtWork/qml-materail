@@ -1,0 +1,30 @@
+HTML.footer = \
+    "        </div>\n" \
+    "       </div>\n" \
+    "   </div>\n" \
+    "   </div>\n" \
+    "</div>\n" \
+    "    <footer class=\"page-footer grey\">\n"\
+    "  <div class=\"container\">\n"\
+    "    <div class=\"row\">\n"\
+    "      <div class=\"col l6 s12\">\n"\
+    "        <h5 class=\"white-text\">Material for QtQuick</h5>\n"\
+    "        <p class=\"grey-text text-lighten-4\"></p>\n"\
+    "      </div>\n"\
+    "      <div class=\"col l4 offset-l2 s12\">\n"\
+    "        <h5 class=\"white-text\">Resources</h5>\n"\
+    "        <ul>\n"\
+    "          <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/papyros\">GitHub organization</a></li>\n"\
+    "          <li><a class=\"grey-text text-lighten-3\" href=\"https://plus.google.com/113262712329378697012\">Follow us on Google+</a></li>\n"\
+    "          <li><a class=\"grey-text text-lighten-3\" href=\"https://groups.google.com/forum/#!forum/papyros\">Join our mailing list</a></li>\n"\
+    "        </ul>\n"\
+    "      </div>\n"\
+    "    </div>\n"\
+    "  </div>\n"\
+    "  <div class=\"footer-copyright\">\n"\
+    "    <div class=\"container\">\n"\
+    "    © 2015 Papyros\n"\
+    "    <a class=\"grey-text text-lighten-4 right\" href=\"https://github.com/papyros/qml-material\">LGPLv3+ license</a>\n"\
+    "    </div>\n"\
+    "  </div>\n"\
+    "</footer>\n"

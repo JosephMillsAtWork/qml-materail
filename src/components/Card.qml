@@ -12,11 +12,16 @@ import QtQuick 2.4
 import Material 0.3
 
 /*!
+ Material 0.3
+ #this is the same as the import statement
+
+*/
+/*!
    \qmltype Card
    \inqmlmodule Material
-
    \brief A card is a piece of paper with unique related data that serves as an entry point
    to more detailed information.
+
  */
 View {
     width: 300 * Units.dp

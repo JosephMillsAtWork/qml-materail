@@ -34,7 +34,10 @@ View {
 
     property int dividerInset: 0
     property bool showDivider: false
-
+    /*!
+      \qmlsignal BaseListItem::clicked()
+      emited when a mouse button is clicked on the BaseListItem
+      */
     signal clicked()
     signal pressAndHold()
 
